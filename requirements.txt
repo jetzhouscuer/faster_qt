@@ -1,0 +1,83 @@
+# ===========================
+# faster_qt 依赖包
+# ===========================
+
+# 核心数据处理
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# 金融数据处理
+pandas-datareader>=0.10.0
+yfinance>=0.2.0
+akshare>=1.12.0          # A股数据（免费）
+tushare>=1.3.0           # A股数据（需注册）
+
+# 因子计算
+talib>=0.4.0             # 技术分析指标（如安装失败可改用 pandas-ta）
+pandas-ta>=0.3.0         # Pandas 技术分析替代
+alpha-factory>=0.1.0     # 因子库（可选）
+
+# 回测框架
+backtrader>=1.9.0        # 主流回测引擎
+zipline>=2.0.0           # Quantopian 开源回测（可选）
+empyrical>=0.5.0        # 绩效指标计算
+
+# 策略开发
+jupyter>=1.0.0
+ipython>=8.0.0
+
+# 存储
+psycopg2-binary>=2.9.0    # PostgreSQL
+redis>=4.5.0             # Redis
+sqlalchemy>=2.0.0        # ORM
+
+# 消息队列（可选，高频用）
+rabbitmq>=3.11.0
+kafka-python>=2.0.0
+
+# 风控
+pyrisk>=1.0.0            # 金融风险计量（可选）
+
+# 监控与可视化
+grafana-api>=1.0.0
+prometheus-client>=0.17.0
+plotly>=5.15.0           # 可视化
+dash>=2.10.0             # Web 可视化（可选）
+
+# 日志与配置
+python-json-logger>=2.0.0
+pyyaml>=6.0.0
+python-dotenv>=1.0.0     # 环境变量管理
+
+# Web API（可选）
+fastapi>=0.100.0
+uvicorn>=0.22.0
+
+# 测试
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+
+# 代码质量
+black>=23.0.0            # 代码格式化
+flake8>=6.0.0            # 代码检查
+mypy>=1.4.0              # 类型检查
+
+# ===========================
+# 可选：券商API（根据需求选择）
+# ===========================
+# 掘金量化
+# gm>=0.4.0
+
+# QMT（迅投极速交易）
+# 需单独安装 QMT 客户端
+
+# XTTrade
+# xttrader>=0.2.0
+
+# ===========================
+# 可选：高频/低延迟
+# ===========================
+# cython>=0.29.0
+# numba>=0.57.0
